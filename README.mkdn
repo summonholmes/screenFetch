@@ -1,6 +1,18 @@
 
 # screenFetch - The Bash Screenshot Information Tool
 
+## Devuan users please read
+As you may know, the current version of screenFetch for Devuan is identical to the version contained in Debian.  Unfortunately, this version does not have an entry for Devuan.  In addition, using the latest scripts at the current git master repository will cause abnormal behaviour.  Therefore, I created this fork for Devuan Stable users.  For users of Devuan 1.0 Jessie or 2.0 Ascii, simply copy/move the "screenfetch" shell script to /usr/bin/screenfetch.  Ensure that the script is executable.
+### Example
+```
+$ git clone https://github.com/summonholmes/screenFetch.git
+$ cd screenFetch
+$ chmod +x screenfetch
+$ sudo mv screenfetch /usr/bin/
+$ cd ..
+$ rm -rf screenFetch
+```
+
 ## What is screenFetch?
 
 screenFetch is a "Bash Screenshot Information Tool". This handy Bash
